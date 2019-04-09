@@ -1,5 +1,5 @@
 package Instagram;
-
+// такая хрень есть только в dev ветке - в мастере нет.
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
