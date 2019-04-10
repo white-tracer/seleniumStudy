@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40c3175c-9531-486b-ad53-e104c9c6f921" name="Default Changelist" comment="" />
+    <list default="true" id="40c3175c-9531-486b-ad53-e104c9c6f921" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Instagram/normallyRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Instagram/normallyRegister.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Instagram/normally.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            <state relative-caret-position="476">
+              <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Instagram/normallyMainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
+            <state relative-caret-position="1139">
               <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Instagram/normallyRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="187">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
                 <element signature="e#160#161#0" expanded="true" />
                 <element signature="e#196#197#0" expanded="true" />
@@ -103,10 +107,10 @@
         <option value="$PROJECT_DIR$/src/main/java/Instagram/registerFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instagram/mainFrameCopy.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instagram/mainFrame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Instagram/normallyRegister.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instagram/normallyFacebookFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instagram/normallyMainPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Instagram/normally.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Instagram/normallyRegister.java" />
       </list>
     </option>
   </component>
@@ -130,7 +134,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -169,6 +172,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,16 +293,19 @@
       <workItem from="1554053907303" duration="7179000" />
       <workItem from="1554061130343" duration="20885000" />
       <workItem from="1554754906267" duration="11205000" />
+      <workItem from="1554929469060" duration="196000" />
+      <workItem from="1554929693205" duration="288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40071000" />
+    <option name="totallyTimeSpent" value="40555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -345,16 +352,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Instagram/mainFrameCopy.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Instagram/registerFrame.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Instagram/normallyFacebookFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-          <folding>
-            <element signature="e#207#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Instagram/mainFrame.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Instagram/mainClass.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/MailRuTest/mainClass.java">
@@ -376,8 +373,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Instagram/normally.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        <state relative-caret-position="476">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -386,7 +383,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Instagram/normallyMainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
+        <state relative-caret-position="1139">
           <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -394,10 +391,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Instagram/normallyFacebookFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Instagram/normallyRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="187">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
             <element signature="e#160#161#0" expanded="true" />
             <element signature="e#196#197#0" expanded="true" />
