@@ -23,14 +23,15 @@ public class normallyMainPage {
     private By fullNameInput = (By.xpath("//input[@name=\"fullName\"]")); // поле ввода имени и фамилии
     private By usernameInput = (By.xpath("//input[@name=\"username\"]")); // поле ввода никнейма
     private By passwordInput = (By.xpath("//input[@name=\"password\"]")); // поле ввода имени и фамилии
+    private By incorrectRegResult = (By.xpath("//p[@class='Ma93n']")); // поле ввода имени и фамилии
 
 
 
 //    дальше пишем методы для работы с кнопками, переводящими на другую страницу. Тут надо быть аакуратным!
 
-    public normallyFacebookFrame clickFacebookLogin () {  // при клике произойдет переход на другую страницу. Поэтому
+    public normallyLogin clickFacebookLogin () {  // при клике произойдет переход на другую страницу. Поэтому
         driver.findElement(loginFacebook).click();        // мы именуем метод ее классом и возвращаем новый объект данного класса с драйвером
-        return new normallyFacebookFrame(driver);
+        return new normallyLogin(driver);
     }
 
     public normallyRegister clickRegisterButton () {
@@ -60,6 +61,17 @@ public class normallyMainPage {
         return this;
     }
 
+    public normallyRegister clickRegister(){ // переход на страницу регистрации через фейсбук
+        driver.findElement(registerButton).click();
+        return new normallyRegister(driver);
+    }
+
+    public normallyLogin clickLogin(){ // переход на страницу авторизации в инсте
+        driver.findElement(loginLink).click();
+        return new normallyLogin(driver);
+    }
+
+
     // напишем метод, проверяющий ответ пи попытке входа с неверными данными. Все действия происходят на одной странице
 
     public normallyMainPage register (String login, String fullname, String username, String password){
@@ -69,5 +81,13 @@ public class normallyMainPage {
         this.typePassword(password);
         this.clickRegisterButton();
         return this;
+    }
+
+
+    // методы для тестов и проверок
+
+    public String assertIncorrectRegistation (){
+        String errorText = driver.findElement(incorrectRegResult).getText();
+        return errorText;
     }
 }
