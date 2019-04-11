@@ -14,18 +14,20 @@ public class normallyLogin {
     private By Login = By.xpath("//input[@name='username']");
     private By Password = By.xpath("//input[@name='password']");
     private By LoginButton = By.xpath("//button[@type='submit']");
+    public By instagramHeader = By.xpath("//div[@class='                  Igw0E     IwRSH      eGOV_         _4EzTm                                                                                                              ']"); // съем заголовка "Войти • Instagram"
+    private By incorrectAuthMarker = By.xpath("//p[@id='slfErrorAlert']");
 
-    public normallyLogin typeLogin(String LoginValue){ // переход на страницу регистрации через фейсбук
+    public normallyLogin typeLogin(String LoginValue){ // ввод логина
         driver.findElement(Login).sendKeys(LoginValue);
         return new normallyLogin(driver);
     }
 
-    public normallyLogin typePassword(String PasswordValue){ // переход на страницу регистрации через фейсбук
+    public normallyLogin typePassword(String PasswordValue){ // ввод пароля
         driver.findElement(Password).sendKeys(PasswordValue);
         return new normallyLogin(driver);
     }
 
-    public normallyLogin clickLogin () {
+    public normallyLogin clickLogin () {  // клик по кнопке "войти"
         driver.findElement(LoginButton).submit();
         return this;
     }
@@ -35,6 +37,23 @@ public class normallyLogin {
         this.typePassword(PasswordValue);
         this.clickLogin();
         return this;
+    }
+
+
+    // методы чисто для тестов
+//    public String varExport (){
+//        String vAr = instagramHeader;
+//        return vAr;
+//    }
+
+    public String IncorrectAuthMarkerValue () {
+        String  VaR = driver.findElement(incorrectAuthMarker).getText();
+        return VaR;
+    }
+
+    public String loginMarker () {
+        String vaR = driver.findElement(instagramHeader).getText();
+        return vaR;
     }
 
 //    public normallyLogin Auth () {  - решил попробовать проверить, когда будет отображаться элемент/ надо бы разобраться
@@ -58,6 +77,9 @@ public class normallyLogin {
 //            }
 //        }
 ////        return this;
+
+
 //    }
+
 
 }

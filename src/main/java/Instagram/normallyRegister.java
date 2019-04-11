@@ -13,6 +13,8 @@ public class normallyRegister {
     private By login = By.xpath("//input[@name='email']");
     private By pass = By.xpath("//input[@name='pass']");
     private By registerButton = By.xpath("//button[@name='login']");
+    private By fbPageheader = By.xpath("//span[@class='_50f6']"); // слепок заголовка страницы для теста
+    private By fbIncorrectloginHeader = By.xpath("//button[@value='1']"); // кнопка "вход" - не исчезает, если не вошли в акк.
 
     public normallyRegister typeLogin(String loginValue) {
         driver.findElement(login).sendKeys(loginValue);
@@ -42,5 +44,22 @@ public class normallyRegister {
 
         return this;
     }
+
+
+    // методы чисто для тестов
+
+    public String facebookPageHeader (){
+        String feaderFB = driver.findElement(fbPageheader).getText();
+        return feaderFB;
+
+    }
+
+    public String facebookIncorrectPageHeader (){
+        String feaderFBincLogin = driver.findElement(fbIncorrectloginHeader).getText();
+        return feaderFBincLogin;
+
+    }
+
+
 
 }

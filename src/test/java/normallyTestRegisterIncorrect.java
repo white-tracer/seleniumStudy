@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class normallyTest {
+public class normallyTestRegisterIncorrect {
 
     private WebDriver driver;
     private normallyMainPage mainPage;
@@ -14,7 +14,7 @@ public class normallyTest {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "D:\\soft\\javaProject\\GIT\\seleniumStudy\\src\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         driver.get("https://www.instagram.com");
         mainPage = new normallyMainPage(driver);
@@ -26,6 +26,7 @@ public class normallyTest {
         String testValue = mainPage.assertIncorrectRegistation();
         Assert.assertEquals("Это имя пользователя уже занято. Попробуйте другое." ,testValue);
     }
+
 
     @After
     public void tearDown() {
