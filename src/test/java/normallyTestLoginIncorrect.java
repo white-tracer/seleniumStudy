@@ -1,12 +1,18 @@
+import Instagram.TakeScreenshots;
 import Instagram.normallyLogin;
 import Instagram.normallyMainPage;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class normallyTestLoginIncorrect {
@@ -24,6 +30,9 @@ public class normallyTestLoginIncorrect {
         driver.get("https://www.instagram.com");
         mainPage = new normallyMainPage(driver);
         loginIncorrect = new normallyLogin(driver);
+
+
+
     }
 
     @Test
@@ -60,7 +69,11 @@ public class normallyTestLoginIncorrect {
 
 
     @After
+
     public void tearDown() {
+    TakeScreenshots photo = new TakeScreenshots(driver);
+    photo.Screenshot();
+
         driver.quit();
     }
 

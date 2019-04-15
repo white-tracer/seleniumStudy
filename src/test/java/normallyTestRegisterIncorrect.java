@@ -1,3 +1,4 @@
+import Instagram.TakeScreenshots;
 import Instagram.normallyMainPage;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
@@ -30,6 +31,9 @@ public class normallyTestRegisterIncorrect {
 
     @After
     public void tearDown() {
+        TakeScreenshots photo = new TakeScreenshots(driver);
+        photo.Screenshot();
+
         driver.quit();
     }
 

@@ -1,3 +1,4 @@
+import Instagram.TakeScreenshots;
 import Instagram.normallyMainPage;
 import Instagram.normallyRegister;
 import org.junit.*;
@@ -45,6 +46,9 @@ public class normallyTestRegisterFacebookIncorrect {
 
     @After
     public void tearDown() {
+        TakeScreenshots photo = new TakeScreenshots(driver);
+        photo.Screenshot();
+
         driver.quit();
     }
 
