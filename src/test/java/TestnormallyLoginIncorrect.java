@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-public class normallyTestLoginIncorrect {
+public class TestnormallyLoginIncorrect {
 
     private WebDriver driver;
     private normallyMainPage mainPage;
